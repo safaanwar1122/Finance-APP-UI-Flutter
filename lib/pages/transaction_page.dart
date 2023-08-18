@@ -77,7 +77,7 @@ class _TransectionPageState extends State<TransectionPage> {
                   Padding(
                     padding: EdgeInsets.only(
                       top: 5,
-                      bottom: 20,
+                      bottom: 10,
                       left: 25,
                     ),
                     child: Row(
@@ -159,7 +159,7 @@ class _TransectionPageState extends State<TransectionPage> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 25, right: 25, bottom: 20),
+              padding: EdgeInsets.only(left: 25, right: 25, bottom: 10, top: 1),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -184,7 +184,7 @@ class _TransectionPageState extends State<TransectionPage> {
                   ),
                   decoration: BoxDecoration(
                     color: white,
-                    borderRadius: BorderRadius.circular(25),
+                    borderRadius: BorderRadius.circular(10),
                     boxShadow: [
                       BoxShadow(
                         color: grey.withOpacity(0.03),
@@ -195,7 +195,7 @@ class _TransectionPageState extends State<TransectionPage> {
                   ),
                   child: Padding(
                     padding: EdgeInsets.only(
-                        top: 10, bottom: 20, right: 20, left: 20),
+                        top: 10, bottom: 10, right: 20, left: 20),
                     child: Row(
                       children: [
                         Container(
@@ -270,8 +270,8 @@ class _TransectionPageState extends State<TransectionPage> {
                         EdgeInsets.only(left: 25, right: 25, top: 5, bottom: 5),
                     margin: EdgeInsets.symmetric(horizontal: 15),
                     child: Container(
-                      width: 325,
-                      height: 325,
+                      width: 200,
+                      height: 200,
                       decoration: BoxDecoration(
                         image: DecorationImage(
                             image: NetworkImage(
@@ -283,16 +283,18 @@ class _TransectionPageState extends State<TransectionPage> {
                 ],
               ),
             ),
-            Container(
-              padding: EdgeInsets.all(16),
-              margin: EdgeInsets.all(25),
+             Container(
+              width: double.infinity,
+
               decoration: BoxDecoration(
                 color: buttoncolor,
-                borderRadius: BorderRadius.circular(25),
+                borderRadius: BorderRadius.circular(10),
               ),
+              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.symmetric(horizontal: 25,vertical: 1),
               child: Center(
                 child: Text(
-                  "See Details",
+                  'See Details',
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
